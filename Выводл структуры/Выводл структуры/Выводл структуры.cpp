@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Определение структуры Address
 struct Address {
     string city;
     string street;
@@ -12,7 +11,6 @@ struct Address {
     int postalCode;
 };
 
-// Функция для вывода структуры Address на консоль
 void printAddress(const Address& address) {
 
     setlocale(LC_ALL, "Russian");
@@ -26,11 +24,9 @@ void printAddress(const Address& address) {
 }
 
 int main() {
-    // Создание экземпляров структуры
     Address address1 = { "Москва", "Арбат", 12, 8, 123456 };
     Address address2 = { "Ижевск", "Пушкина", 59, 143, 953769 };
 
-    // Вывод на консоль
     printAddress(address1);
     printAddress(address2);
 
